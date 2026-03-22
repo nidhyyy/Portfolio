@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidhi Savita - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="blob blob-5"></div>
+        <div class="blob blob-6"></div>
+    </div>
+    <nav>
+        <div class="logo">PORTFOLIO</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#training-extra">Training & Extras</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero fade-in-section">
+            <div class="hero-content text-column">
+                <h1>Hello, I am <br><span class="highlight">Nidhi Savita</span></h1>
+                <p id="hero-subtitle">Enthusiast <span class="highlight">Data Analyst</span> with a strong enthusiasm
+                    for tackling complex problems and crafting impactful, user-centric digital solutions.</p>
+                <div class="actions">
+                    <button id="download-resume" class="btn primary-btn"><i class="fas fa-download"></i> Download Resume
+                        PDF</button>
+                    <a href="#projects" class="btn secondary-btn">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-image image-column">
+                <div class="image-placeholder" id="profile-img-container">
+                    <img src="Files/Profile.jpeg" alt="Nidhi Savita" id="profile-img"
+                        style="display: block; width: 100%; height: 100%; object-fit: cover;">
+                    <span id="img-fallback" style="display: none;">Your Image Here</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="fade-in-section glass-panel about-overhaul">
+            <div class="about-header">
+                <h2>About Me</h2>
+                <p class="about-tagline highlight">"Turning Data into Insights, and Ideas into Reality."</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-main-text">
+                    <p>I am a B.Tech Computer Science and Engineering student from Lovely Professional University. I
+                        have expertise developing online applications using HTML, CSS, React, and NodeJS, and like
+                        writing in C++, Java, and Python. I am versatile, consistent, and collaborative, with a strong
+                        emphasis on problem-solving and lifelong learning.</p>
+                </div>
+                <div class="about-badges">
+                    <div class="info-badge glass-panel">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>B.Tech CSE @ LPU</span>
+                    </div>
+                    <div class="info-badge glass-panel">
+                        <i class="fas fa-database"></i>
+                        <span>Data Analyst Enthu.</span>
+                    </div>
+                    <div class="info-badge glass-panel">
+                        <i class="fas fa-globe-americas"></i>
+                        <span>Spanish Learner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="fade-in-section">
+            <h2>My Skills</h2>
+            <div class="skills-grid" id="skills-container">
+                <div class="skill-card glass-panel cpp">
+                    <div class="hexagon-container">
+                        <span class="hexagon-text highlight">C++</span>
+                    </div>
+                    C++
+                </div>
+                <div class="skill-card glass-panel java">
+                    <div class="hexagon-container">
+                        <i class="fab fa-java" style="color: #f89820;"></i>
+                    </div>
+                    Java
+                </div>
+                <div class="skill-card glass-panel c">
+                    <div class="hexagon-container">
+                        <svg viewBox="0 0 128 128"
+                            style="width: 3rem; height: 3rem; filter: drop-shadow(0 0 8px rgba(168, 185, 204, 0.4));">
+                            <path fill="#A8B9CC"
+                                d="M106.6 93.3c-10.1 14.3-27.1 23.7-46.2 23.7-31.1 0-56.3-25.2-56.3-56.3S29.3 4.4 60.4 4.4c19.1 0 36.1 9.4 46.2 23.7l16.1-12.1C108.3 1.9 85.8-5.3 60.4-5.3 23.9-5.3-5.3 23.9-5.3 60.4S23.9 126.1 60.4 126.1c25.4 0 47.9-7.2 62.3-21.3L106.6 93.3z">
+                            </path>
+                        </svg>
+                    </div>
+                    C
+                </div>
+                <div class="skill-card glass-panel python">
+                    <div class="hexagon-container">
+                        <i class="fab fa-python" style="color: #3776ab;"></i>
+                    </div>
+                    Python
+                </div>
+                <div class="skill-card glass-panel html">
+                    <div class="hexagon-container">
+                        <i class="fab fa-html5" style="color: #e34f26;"></i>
+                    </div>
+                    HTML / CSS
+                </div>
+                <div class="skill-card glass-panel react">
+                    <div class="hexagon-container">
+                        <i class="fab fa-react" style="color: #61dbfb;"></i>
+                    </div>
+                    React / NodeJS
+                </div>
+                <div class="skill-card glass-panel sql">
+                    <div class="hexagon-container">
+                        <i class="fas fa-database" style="color: #00758f;"></i>
+                    </div>
+                    Oracle / SQL
+                </div>
+                <div class="skill-card glass-panel">
+                    <div class="hexagon-container">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    Git / GitHub
+                </div>
+                <div class="skill-card glass-panel excel">
+                    <div class="hexagon-container">
+                        <i class="fas fa-chart-bar" style="color: #217346;"></i>
+                    </div>
+                    Power BI / Excel
+                </div>
+                <div class="skill-card glass-panel">
+                    <div class="hexagon-container">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    Linux / Ubuntu
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="fade-in-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid" id="projects-container">
+                <div class="project-card glass-panel">
+                    <div class="project-img" style="background: linear-gradient(45deg, #11998e, #38ef7d);"><i
+                            class="fas fa-leaf fa-3x" style="color:white;"></i></div>
+                    <h3>Eco-Track</h3>
+                    <p><strong>Feb 2025 - Mar 2025</strong><br>A web-based platform to track food waste. Features AI
+                        chatbot for tips and recipes. Delivered a responsive dashboard with visual insights, animations,
+                        and gamification.</p>
+                    <p style="font-size:0.9rem; opacity:0.8;"><em>HTML, Tailwind, JS, Chart.js, Gemini API</em></p>
+                    <div class="project-actions">
+                        <a href="https://github.com/nidhyyy/Food_Waste-_Tracker" target="_blank"
+                            class="btn small-btn github-btn"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+                <div class="project-card glass-panel">
+                    <div class="project-img" style="background: linear-gradient(45deg, #8E2DE2, #4A00E0);"><i
+                            class="fas fa-chart-line fa-3x" style="color:white;"></i></div>
+                    <h3>Crime Rate Analysis</h3>
+                    <p><strong>Jan 2025 - Feb 2025</strong><br>Analyzed California crime data to identify trends and
+                        correlations. Preprocessed datasets and created clear visualizations for insights.</p>
+                    <p style="font-size:0.9rem; opacity:0.8;"><em>Python, Pandas, NumPy, Matplotlib, Jupyter</em></p>
+                    <div class="project-actions">
+                        <a href="https://github.com/nidhyyy/Crime_Rate_Analysis" target="_blank"
+                            class="btn small-btn github-btn"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+                <div class="project-card glass-panel">
+                    <div class="project-img" style="background: linear-gradient(45deg, #f12711, #f5af19);"><i
+                            class="fas fa-microphone-alt fa-3x" style="color:white;"></i></div>
+                    <h3>Ni-Assist</h3>
+                    <p><strong>Nov 2024 - Jan 2025</strong><br>Voice-controlled assistant for web navigation, media
+                        playback, and utility tasks via natural-language commands with cross-platform text-to-speech.
+                    </p>
+                    <p style="font-size:0.9rem; opacity:0.8;"><em>Python, Speech Recognition, OS module, RegEx</em></p>
+                    <div class="project-actions">
+                        <a href="https://github.com/nidhyyy/Niassist" target="_blank"
+                            class="btn small-btn github-btn"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="fade-in-section">
+            <h2>Education</h2>
+            <div class="cert-list" id="education-container">
+                <div class="cert-card glass-panel">
+                    <h3>B.Tech - Computer Science</h3>
+                    <p>Lovely Professional University<br>Punjab, India | Since Aug 2023<br>CGPA: 7.38</p>
+                </div>
+                <div class="cert-card glass-panel">
+                    <h3>Intermediate</h3>
+                    <p>CM Rise Govt. Padma Raje Girls<br>Gwalior | Apr 2022 - Mar 2023<br>CGPA: 8.57</p>
+                </div>
+                <div class="cert-card glass-panel">
+                    <h3>Matriculation</h3>
+                    <p>Oracle Public School<br>Gwalior | Apr 2020 - Mar 2021<br>CGPA: 6.63</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="fade-in-section">
+            <h2>Certifications</h2>
+            <div class="cert-list">
+                <div class="cert-card glass-panel">
+                    <h3>Ai Fluency: Fundamentals & Frameworks </h3>
+                    <p>Anthropic Academy | Mar 2026</p>
+                    <a href="Files/certificate-Ai Fluency Claude.pdf" target="_blank"
+                        class="btn small-btn github-btn mt-top"><i class="fas fa-certificate"></i> View Certificate</a>
+                </div>
+                <div class="cert-card glass-panel">
+                    <h3>Build generative apps and solutions with No-Code Tools </h3>
+                    <p>Infosys | Aug 2025</p>
+                    <a href="Files/BUILD GEN AI CERTIFICATE.pdf" target="_blank"
+                        class="btn small-btn github-btn mt-top"><i class="fas fa-certificate"></i> View Certificate</a>
+                </div>
+                <div class="cert-card glass-panel">
+                    <h3>DSA & OOPS in C++</h3>
+                    <p>CSE Pathshala | Aug 2025</p>
+                    <a href="Files/DSA C++ Pathshala.png" target="_blank" class="btn small-btn github-btn mt-top"><i
+                            class="fas fa-certificate"></i> View Certificate</a>
+                </div>
+                <div class="cert-card glass-panel">
+                    <h3>Cloud Computing</h3>
+                    <p>NPTEL | Apr 2025</p>
+                    <a href="Files/Cloud Computing.pdf" target="_blank" class="btn small-btn github-btn mt-top"><i
+                            class="fas fa-certificate"></i> View Certificate</a>
+                </div>
+                <div class="cert-card glass-panel">
+                    <h3>Mastering in C</h3>
+                    <p>CSE PathShala | Feb 2024</p>
+                    <a href="Files/Mastering in C.png" target="_blank" class="btn small-btn github-btn mt-top"><i
+                            class="fas fa-certificate"></i> View Certificate</a>
+                </div>
+                <div class="cert-card glass-panel">
+                    <h3>Computer/Network Communication</h3>
+                    <p> Coursera | Sep - Nov 2024</p>
+                    <a href="certificates/TCP_IP_Certificate.pdf" target="_blank"
+                        class="btn small-btn github-btn mt-top"><i class="fas fa-certificate"></i> View Certificate</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="training-extra" class="fade-in-section">
+            <h2>Training & Extra-curricular</h2>
+            <div class="cert-list">
+                <div class="cert-card glass-panel">
+                    <h3>C++ Programming: DSA & OOPS</h3>
+                    <p>CSE PATHSHALA | Jun 2025 - Aug 2025<br>Hands-on training covering Data Structures, Algorithms,
+                        and OOP concepts.</p>
+                </div>
+
+                <div class="cert-card glass-panel">
+                    <h3>Coke-Studio | Magnitude 2023</h3>
+                    <p>Nov 2023</p>
+                </div>
+                <div class="cert-card glass-panel">
+                    <h3>Latin American Spanish Course</h3>
+                    <p>Udemy | Oct 2023</p>
+                </div>
+                <div class="cert-card glass-panel">
+                    <h3>Volunteer</h3>
+                    <p>Department of Youth Capital | LPU | Aug 2023</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="fade-in-section glass-panel">
+            <h2>Get In Touch</h2>
+            <p>I'd love to hear from you! Connect with me on my socials.</p>
+            <div class="socials" id="social-container">
+                <a href="http://www.linkedin.com/in/nidhi-savita17" target="_blank" class="social-icon"
+                    title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/nidhyyy" target="_blank" class="social-icon" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="mailto:nidhisavita2006@gmail.com" class="social-icon" title="Email"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="tel:+918109579833" class="social-icon" title="Phone"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> nidhisavita2006@gmail.com</p>
+                <p style="margin-top: 15px;"><i class="fas fa-phone"></i> +91 8109579833</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nidhi Savita. Crafted .</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
