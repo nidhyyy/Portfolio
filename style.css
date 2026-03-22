@@ -576,14 +576,21 @@ h2 {
     text-shadow: 0 0 20px var(--accent);
 }
 
-.cpp .hexagon-container { border-color: #00599C; box-shadow: 0 0 15px rgba(0, 89, 156, 0.2); }
-.java .hexagon-container { border-color: #f89820; box-shadow: 0 0 15px rgba(248, 152, 32, 0.2); }
-.c .hexagon-container { border-color: #A8B9CC; box-shadow: 0 0 15px rgba(168, 185, 204, 0.2); }
-.python .hexagon-container { border-color: #3776ab; box-shadow: 0 0 15px rgba(55, 118, 171, 0.2); }
-.html .hexagon-container { border-color: #e34f26; box-shadow: 0 0 15px rgba(227, 79, 38, 0.2); }
-.react .hexagon-container { border-color: #61dbfb; box-shadow: 0 0 15px rgba(97, 219, 251, 0.2); }
-.sql .hexagon-container { border-color: #00758f; box-shadow: 0 0 15px rgba(0, 117, 143, 0.2); }
-.excel .hexagon-container { border-color: #217346; box-shadow: 0 0 15px rgba(33, 115, 70, 0.2); }
+.cpp .hexagon-container { border-color: rgba(0, 89, 156, 0.3); box-shadow: 0 0 15px rgba(0, 89, 156, 0.1); }
+.java .hexagon-container { border-color: rgba(248, 152, 32, 0.3); box-shadow: 0 0 15px rgba(248, 152, 32, 0.1); }
+.c .hexagon-container { border-color: rgba(168, 185, 204, 0.3); box-shadow: 0 0 15px rgba(168, 185, 204, 0.1); }
+.python .hexagon-container { border-color: rgba(55, 118, 171, 0.3); box-shadow: 0 0 15px rgba(55, 118, 171, 0.1); }
+.html .hexagon-container { border-color: rgba(227, 79, 38, 0.3); box-shadow: 0 0 15px rgba(227, 79, 38, 0.1); }
+.react .hexagon-container { border-color: rgba(97, 219, 251, 0.3); box-shadow: 0 0 15px rgba(97, 219, 251, 0.1); }
+.sql .hexagon-container { border-color: rgba(0, 117, 143, 0.3); box-shadow: 0 0 15px rgba(0, 117, 143, 0.1); }
+.excel .hexagon-container { border-color: rgba(33, 115, 70, 0.3); box-shadow: 0 0 15px rgba(33, 115, 70, 0.1); }
+
+.svg-skill-icon {
+    width: 3rem;
+    height: 3rem;
+    fill: #fff;
+    filter: drop-shadow(0 0 8px var(--accent));
+}
 
 .skill-card:hover .hexagon-container {
     background: rgba(255, 255, 255, 0.1);
@@ -611,14 +618,14 @@ h2 {
 }
 
 
-.skill-card.cpp:hover { box-shadow: 0 10px 30px rgba(0, 118, 206, 0.2); }
-.skill-card.java:hover { box-shadow: 0 10px 30px rgba(248, 152, 32, 0.2); }
-.skill-card.c:hover { box-shadow: 0 10px 30px rgba(168, 185, 204, 0.2); }
-.skill-card.python:hover { box-shadow: 0 10px 30px rgba(55, 118, 171, 0.2); }
-.skill-card.html:hover { box-shadow: 0 10px 30px rgba(227, 79, 38, 0.2); }
-.skill-card.react:hover { box-shadow: 0 10px 30px rgba(97, 219, 251, 0.2); }
-.skill-card.sql:hover { box-shadow: 0 10px 30px rgba(0, 117, 143, 0.2); }
-.skill-card.excel:hover { box-shadow: 0 10px 30px rgba(33, 115, 70, 0.2); }
+.skill-card.cpp:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
+.skill-card.java:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
+.skill-card.c:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
+.skill-card.python:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
+.skill-card.html:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
+.skill-card.react:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
+.skill-card.sql:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
+.skill-card.excel:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
 
 /* Certifications */
 .cert-list {
@@ -660,14 +667,27 @@ h2 {
     gap: 1.2rem;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+.project-img {
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    backdrop-filter: blur(8px);
 }
 
 .project-img i {
-    color: var(--text-dark);
+    color: #fff;
+    filter: drop-shadow(0 0 10px var(--accent));
+}
+
+.project-card:hover .project-img i {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 20px var(--accent));
 }
 
 .project-card h3 {
@@ -688,6 +708,14 @@ h2 {
 }
 
 /* Contact and Socials */
+#contact {
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
 .socials {
     display: flex;
     justify-content: center;
@@ -710,6 +738,19 @@ h2 {
     border: 1px solid var(--glass-border);
     position: relative;
     overflow: hidden;
+}
+
+.social-icon img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    filter: grayscale(1) brightness(1.2) sepia(1) hue-rotate(160deg) saturate(4) contrast(1.1) drop-shadow(0 0 10px var(--accent));
+    z-index: 2;
+    transition: filter 0.3s ease;
+}
+
+.social-icon:hover img {
+    filter: grayscale(0) brightness(1) drop-shadow(0 0 15px var(--accent));
 }
 
 .social-icon::before {
@@ -808,13 +849,18 @@ footer {
         border-right: 1px solid var(--glass-border);
     }
 
-    .contact-info-container {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.contact-info {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
 }
 
 /* Contact Form Styling */
