@@ -76,4 +76,29 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.style.animation = '';
         });
     });
+
+    // Skill Category Filtering Logic
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const skillCards = document.querySelectorAll('.skill-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // 1. Update active button state
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filterValue = button.getAttribute('data-filter');
+
+            // 2. Filter skill cards
+            skillCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                
+                if (filterValue === 'all' || cardCategory === filterValue) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
 });

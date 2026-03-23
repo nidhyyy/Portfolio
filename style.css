@@ -22,7 +22,8 @@
 body {
     font-family: var(--body-font);
     color: var(--text-light);
-    background: #020617; /* Very deep dark base */
+    background: #020617;
+    /* Very deep dark base */
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
@@ -74,7 +75,8 @@ body {
 .blob-2 {
     bottom: -10%;
     right: -10%;
-    background: var(--accent-purple); /* Reverted */
+    background: var(--accent-purple);
+    /* Reverted */
     animation-duration: 25s;
     animation-delay: -5s;
 }
@@ -124,15 +126,20 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: 
+    background-image:
         radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
     background-size: 40px 40px;
     animation: slowScroll 120s linear infinite;
 }
 
 @keyframes slowScroll {
-    from { background-position: 0 0; }
-    to { background-position: 0 1000px; }
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 1000px;
+    }
 }
 
 
@@ -140,12 +147,15 @@ body {
     0% {
         transform: translate(0, 0) scale(1) rotate(0deg);
     }
+
     33% {
         transform: translate(80px, 120px) scale(1.1) rotate(15deg);
     }
+
     66% {
         transform: translate(-120px, 80px) scale(0.9) rotate(-15deg);
     }
+
     100% {
         transform: translate(0, 0) scale(1) rotate(0deg);
     }
@@ -405,7 +415,7 @@ h2 {
     width: 350px;
     height: 350px;
     background: var(--glass-bg);
-    border: 3px dashed rgba(255, 255, 255, 0.5);
+    border: 3px solid var(--accent);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -414,14 +424,20 @@ h2 {
     backdrop-filter: blur(10px);
     overflow: hidden;
     position: relative;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px rgba(14, 165, 233, 0.3);
+    transition: all 0.5s ease;
+}
+
+.image-placeholder:hover {
+    box-shadow: 0 0 45px rgba(14, 165, 233, 0.6);
+    transform: scale(1.02);
 }
 
 .image-placeholder img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: none;
+    display: block;
 }
 
 @keyframes floating {
@@ -512,10 +528,51 @@ h2 {
     .about-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .about-badges {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+
+/* Skill Filters */
+.skill-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 30px;
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backdrop-filter: blur(8px);
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: 0 5px 15px rgba(14, 165, 233, 0.3);
+}
+
+.filter-btn.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
+}
+
+.skill-card.hidden {
+    display: none;
 }
 
 
@@ -563,6 +620,20 @@ h2 {
     border: 2px solid transparent;
 }
 
+.hexagon-container img {
+    width: 45%;
+    height: 45%;
+    object-fit: contain;
+    filter: brightness(1.1) grayscale(0.5) drop-shadow(0 0 8px var(--accent));
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.skill-card:hover .hexagon-container img {
+    filter: brightness(1) grayscale(0) drop-shadow(0 0 12px var(--accent));
+    transform: scale(1.15);
+}
+
 
 
 .skill-card i {
@@ -576,14 +647,45 @@ h2 {
     text-shadow: 0 0 20px var(--accent);
 }
 
-.cpp .hexagon-container { border-color: rgba(0, 89, 156, 0.3); box-shadow: 0 0 15px rgba(0, 89, 156, 0.1); }
-.java .hexagon-container { border-color: rgba(248, 152, 32, 0.3); box-shadow: 0 0 15px rgba(248, 152, 32, 0.1); }
-.c .hexagon-container { border-color: rgba(168, 185, 204, 0.3); box-shadow: 0 0 15px rgba(168, 185, 204, 0.1); }
-.python .hexagon-container { border-color: rgba(55, 118, 171, 0.3); box-shadow: 0 0 15px rgba(55, 118, 171, 0.1); }
-.html .hexagon-container { border-color: rgba(227, 79, 38, 0.3); box-shadow: 0 0 15px rgba(227, 79, 38, 0.1); }
-.react .hexagon-container { border-color: rgba(97, 219, 251, 0.3); box-shadow: 0 0 15px rgba(97, 219, 251, 0.1); }
-.sql .hexagon-container { border-color: rgba(0, 117, 143, 0.3); box-shadow: 0 0 15px rgba(0, 117, 143, 0.1); }
-.excel .hexagon-container { border-color: rgba(33, 115, 70, 0.3); box-shadow: 0 0 15px rgba(33, 115, 70, 0.1); }
+.cpp .hexagon-container {
+    border-color: rgba(0, 89, 156, 0.3);
+    box-shadow: 0 0 15px rgba(0, 89, 156, 0.1);
+}
+
+.java .hexagon-container {
+    border-color: rgba(248, 152, 32, 0.3);
+    box-shadow: 0 0 15px rgba(248, 152, 32, 0.1);
+}
+
+.c .hexagon-container {
+    border-color: rgba(168, 185, 204, 0.3);
+    box-shadow: 0 0 15px rgba(168, 185, 204, 0.1);
+}
+
+.python .hexagon-container {
+    border-color: rgba(55, 118, 171, 0.3);
+    box-shadow: 0 0 15px rgba(55, 118, 171, 0.1);
+}
+
+.html .hexagon-container {
+    border-color: rgba(227, 79, 38, 0.3);
+    box-shadow: 0 0 15px rgba(227, 79, 38, 0.1);
+}
+
+.react .hexagon-container {
+    border-color: rgba(97, 219, 251, 0.3);
+    box-shadow: 0 0 15px rgba(97, 219, 251, 0.1);
+}
+
+.sql .hexagon-container {
+    border-color: rgba(0, 117, 143, 0.3);
+    box-shadow: 0 0 15px rgba(0, 117, 143, 0.1);
+}
+
+.excel .hexagon-container {
+    border-color: rgba(33, 115, 70, 0.3);
+    box-shadow: 0 0 15px rgba(33, 115, 70, 0.1);
+}
 
 .svg-skill-icon {
     width: 3rem;
@@ -613,28 +715,60 @@ h2 {
 }
 
 @keyframes gearSpin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 
-.skill-card.cpp:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
-.skill-card.java:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
-.skill-card.c:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
-.skill-card.python:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
-.skill-card.html:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
-.skill-card.react:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
-.skill-card.sql:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
-.skill-card.excel:hover { box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3); }
+.skill-card.cpp:hover {
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+}
+
+.skill-card.java:hover {
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+}
+
+.skill-card.c:hover {
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+}
+
+.skill-card.python:hover {
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+}
+
+.skill-card.html:hover {
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+}
+
+.skill-card.react:hover {
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+}
+
+.skill-card.sql:hover {
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+}
+
+.skill-card.excel:hover {
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+}
 
 /* Certifications */
 .cert-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
 }
 
 .cert-card {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
     transition: transform 0.3s, border-left-color 0.3s;
     border-left: 6px solid var(--accent);
 }
@@ -656,17 +790,22 @@ h2 {
 
 /* Projects */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
 }
 
 .project-card {
+    max-width: 850px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-    transition: transform 0.3s, box-shadow 0.3s;
+    gap: 1.5rem;
+    padding: 2.5rem;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s;
 }
+
 .project-img {
     height: 200px;
     background: rgba(255, 255, 255, 0.05);
@@ -849,18 +988,18 @@ footer {
         border-right: 1px solid var(--glass-border);
     }
 
-.contact-info {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
+    .contact-info {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 
-.contact-info p {
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
+    .contact-info p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+    }
 }
 
 /* Contact Form Styling */

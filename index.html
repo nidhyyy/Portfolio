@@ -75,30 +75,37 @@
                         <i class="fas fa-database"></i>
                         <span>Data Analyst Enthu.</span>
                     </div>
-                    <div class="info-badge glass-panel">
-                        <i class="fas fa-globe-americas"></i>
-                        <span>Spanish Learner</span>
-                    </div>
+
                 </div>
             </div>
         </section>
 
         <section id="skills" class="fade-in-section">
             <h2>My Skills</h2>
+
+            <div class="skill-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="languages">Languages</button>
+                <button class="filter-btn" data-filter="framework">Framework</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+                <button class="filter-btn" data-filter="soft-skills">Soft Skills</button>
+            </div>
+
             <div class="skills-grid" id="skills-container">
-                <div class="skill-card glass-panel cpp">
+                <!-- Languages -->
+                <div class="skill-card glass-panel cpp" data-category="languages">
                     <div class="hexagon-container">
                         <span class="hexagon-text highlight">C++</span>
                     </div>
                     C++
                 </div>
-                <div class="skill-card glass-panel java">
+                <div class="skill-card glass-panel java" data-category="languages">
                     <div class="hexagon-container">
                         <i class="fab fa-java"></i>
                     </div>
                     Java
                 </div>
-                <div class="skill-card glass-panel c">
+                <div class="skill-card glass-panel c" data-category="languages">
                     <div class="hexagon-container">
                         <svg viewBox="0 0 128 128" class="svg-skill-icon">
                             <path
@@ -108,47 +115,89 @@
                     </div>
                     C
                 </div>
-                <div class="skill-card glass-panel python">
+                <div class="skill-card glass-panel python" data-category="languages">
                     <div class="hexagon-container">
                         <i class="fab fa-python"></i>
                     </div>
                     Python
                 </div>
-                <div class="skill-card glass-panel html">
+
+                <!-- Framework -->
+                <div class="skill-card glass-panel html" data-category="framework">
                     <div class="hexagon-container">
                         <i class="fab fa-html5"></i>
                     </div>
                     HTML / CSS
                 </div>
-                <div class="skill-card glass-panel react">
+                <div class="skill-card glass-panel react" data-category="framework">
                     <div class="hexagon-container">
                         <i class="fab fa-react"></i>
                     </div>
                     React / NodeJS
                 </div>
-                <div class="skill-card glass-panel sql">
-                    <div class="hexagon-container">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    Oracle / SQL
-                </div>
-                <div class="skill-card glass-panel">
+
+                <!-- Tools -->
+                <div class="skill-card glass-panel" data-category="tools">
                     <div class="hexagon-container">
                         <i class="fas fa-tools"></i>
                     </div>
                     Git / GitHub
                 </div>
-                <div class="skill-card glass-panel excel">
+                <div class="skill-card glass-panel sql" data-category="tools">
+                    <div class="hexagon-container">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    Oracle / SQL
+                </div>
+                <div class="skill-card glass-panel excel" data-category="tools">
                     <div class="hexagon-container">
                         <i class="fas fa-chart-bar"></i>
                     </div>
                     Power BI / Excel
                 </div>
-                <div class="skill-card glass-panel">
+                <div class="skill-card glass-panel" data-category="tools">
+                    <div class="hexagon-container">
+                        <img src="Files/jupyter.png" alt="Jupyter">
+                    </div>
+                    Jupyter
+                </div>
+                <div class="skill-card glass-panel" data-category="tools">
                     <div class="hexagon-container">
                         <i class="fab fa-linux"></i>
                     </div>
                     Linux / Ubuntu
+                </div>
+                <div class="skill-card glass-panel" data-category="tools">
+                    <div class="hexagon-container">
+                        <img src="Files/mongodb.png" alt="MongoDB">
+                    </div>
+                    MongoDB
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-card glass-panel" data-category="soft-skills">
+                    <div class="hexagon-container">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    Problem Solving
+                </div>
+                <div class="skill-card glass-panel" data-category="soft-skills">
+                    <div class="hexagon-container">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    Collaborative
+                </div>
+                <div class="skill-card glass-panel" data-category="soft-skills">
+                    <div class="hexagon-container">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    Adaptability
+                </div>
+                <div class="skill-card glass-panel" data-category="soft-skills">
+                    <div class="hexagon-container">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    Consistent
                 </div>
             </div>
         </section>
@@ -199,7 +248,7 @@
             <div class="cert-list" id="education-container">
                 <div class="cert-card glass-panel">
                     <h3>B.Tech - Computer Science</h3>
-                    <p>Lovely Professional University<br>Punjab, India | Since Aug 2023<br>CGPA: 7.38</p>
+                    <p>Lovely Professional University<br>Phagwara| Since Aug 2023<br>CGPA: 7.38</p>
                 </div>
                 <div class="cert-card glass-panel">
                     <h3>Intermediate</h3>
@@ -248,8 +297,8 @@
                 <div class="cert-card glass-panel">
                     <h3>Computer/Network Communication</h3>
                     <p> Coursera | Sep - Nov 2024</p>
-                    <a href="certificates/TCP_IP_Certificate.pdf" target="_blank"
-                        class="btn small-btn github-btn mt-top"><i class="fas fa-certificate"></i> View Certificate</a>
+                    <a href="Files/TCP_IP_Certificate.pdf" target="_blank" class="btn small-btn github-btn mt-top"><i
+                            class="fas fa-certificate"></i> View Certificate</a>
                 </div>
             </div>
         </section>
@@ -263,10 +312,7 @@
                     <p>CSE PATHSHALA | Jun 2025 - Aug 2025<br>Hands-on training covering Data Structures, Algorithms,
                         and OOP concepts.</p>
                 </div>
-                <div class="cert-card glass-panel">
-                    <h3>Spanish: High A1 Level</h3>
-                    <p>Duolingo | Jul 2025</p>
-                </div>
+
                 <div class="cert-card glass-panel">
                     <h3>Coke-Studio | Magnitude 2023</h3>
                     <p>Nov 2023</p>
@@ -287,10 +333,6 @@
                     title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/nidhyyy" target="_blank" class="social-icon" title="GitHub"><i
                         class="fab fa-github"></i></a>
-                <a href="https://www.duolingo.com/profile/Nidhi135?via=share_profile_link" target="_blank"
-                    class="social-icon" title="Duolingo">
-                    <img src="Files/duo.png" alt="Duolingo">
-                </a>
                 <a href="mailto:nidhisavita2006@gmail.com" class="social-icon" title="Email"><i
                         class="fas fa-envelope"></i></a>
                 <a href="tel:+918109579833" class="social-icon" title="Phone"><i class="fas fa-phone"></i></a>
