@@ -790,19 +790,18 @@ h2 {
 
 /* Projects */
 .projects-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    width: 100%;
 }
 
 .project-card {
-    max-width: 850px;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2.5rem;
+    padding: 2rem;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s;
 }
 
@@ -965,6 +964,11 @@ footer {
     .image-placeholder {
         width: 250px;
         height: 250px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
 
