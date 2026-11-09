@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projects | Nidhi Savita</title>
+  <meta name="description"
+    content="Nidhi Savita — Computer Science undergraduate building web applications, backend systems, and AI-powered workflows.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="shell" id="home">
+    <header>
+      <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="projects.html"
+          aria-current="page">Projects</a><a href="about.html">About</a><a href="resume.html">Resume</a><a
+          href="contact.html">Contact</a></nav>
+      <div class="status"><span class="dot"></span> CSE UNDERGRADUATE · CLASS OF 2027</div>
+    </header>
+    <section class="page-intro"><span class="tiny">01 / NIDHI SAVITA</span>
+      <h1 class="page-title">Projects</h1>
+      <p class="lede">Explore six projects across application development, infrastructure monitoring, analytics, and
+        machine learning.</p>
+    </section>
+    <div class="filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all"
+        aria-pressed="true">All projects</button><button class="filter" data-filter="ai" aria-pressed="false">AI
+        assistant</button><button class="filter" data-filter="infra" aria-pressed="false">Real-time
+        systems</button><button class="filter" data-filter="eco" aria-pressed="false">Analytics</button><button
+        class="filter" data-filter="ml" aria-pressed="false">Machine learning</button><button class="filter"
+        data-filter="commerce" aria-pressed="false">E-commerce</button></div>
+    <p class="project-count" aria-live="polite" id="project-count">Showing 6 projects</p>
+    <div class="project-grid">
+      <article class="work-card" data-category="ai">
+        <div class="work-meta ai"><span class="eyebrow">AI APPLICATION</span><span>Nov 2024 – Jan 2025</span></div>
+        <div class="work-body">
+          <h3>Ni-Assist</h3>
+          <p>A Flask-based AI assistant for contextual conversations, document answers, and actionable task plans.</p>
+          <div class="skills"><span>Python</span><span>Flask</span><span>Gemini API</span><span>SQLite</span></div><a
+            class="project-link" href="projects.html#ni-assist">View project <span class="direction"
+              aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="work-card" data-category="infra">
+        <div class="work-meta infra"><span class="eyebrow">REAL-TIME APPLICATION</span><span>Mar 2026 – Apr 2026</span>
+        </div>
+        <div class="work-body">
+          <h3>PulseWatch</h3>
+          <p>Real-time infrastructure monitoring with CPU, memory, and disk metrics, interactive charts, and alerts.</p>
+          <div class="skills"><span>React</span><span>Node.js</span><span>WebSockets</span><span>Chart.js</span></div><a
+            class="project-link" href="projects.html#pulsewatch">View project <span class="direction"
+              aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="work-card" data-category="eco">
+        <div class="work-meta eco"><span class="eyebrow">ANALYTICS APPLICATION</span><span>Feb 2025 – Mar 2025</span>
+        </div>
+        <div class="work-body">
+          <h3>Eco-Track</h3>
+          <p>Food-waste insights, visual dashboards, and AI-powered food-storage recommendations.</p>
+          <div class="skills"><span>HTML</span><span>Tailwind CSS</span><span>JavaScript</span><span>Chart.js</span>
+          </div><a class="project-link" href="projects.html#eco-track">View project <span class="direction"
+              aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="work-card" data-category="commerce">
+        <div class="work-meta commerce"><span class="eyebrow">E-COMMERCE APPLICATION</span><span>Clothing store</span>
+        </div>
+        <div class="work-body">
+          <h3>Thread-Store</h3>
+          <p>A clothing e-commerce application with customer accounts, product browsing, and an order workflow backed by
+            MongoDB.</p>
+          <div class="skills"><span>JavaScript</span><span>Node.js</span><span>MongoDB</span><span>Mongoose</span></div>
+          <a class="project-link" href="projects.html#thread-store">View project <span class="direction"
+              aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="work-card" data-category="ml">
+        <div class="work-meta ml"><span class="eyebrow">Machine learning</span><span>Academic project</span></div>
+        <div class="work-body">
+          <h3>Machine Failure Detection and Maintenance Prioritization</h3>
+          <p>A PySpark notebook that classifies equipment observations and compares alert thresholds for inspection
+            prioritization.</p>
+          <div class="skills"><span>Python</span><span>PySpark</span><span>Spark ML</span><span>Jupyter</span></div>
+          <a class="project-link" href="projects.html#machine-failure-detection"
+            aria-label="View Machine Failure Detection and Maintenance Prioritization">View project <span
+              class="direction" aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="work-card" data-category="eco">
+        <div class="work-meta eco"><span class="eyebrow">Business intelligence</span><span>Academic project</span></div>
+        <div class="work-body">
+          <h3>Product Sales Insights &amp; Demand Forecast Dashboard</h3>
+          <p>A Power BI dashboard for exploring retail pricing, seasonal stock, product ratings, returns, and demand
+            trends.</p>
+          <div class="skills"><span>Power BI</span><span>Data modeling</span><span>Retail
+              analytics</span><span>Forecasting</span></div>
+          <a class="project-link" href="projects.html#product-sales-dashboard"
+            aria-label="View Product Sales Insights &amp; Demand Forecast Dashboard">View project <span
+              class="direction" aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </div>
+    <section class="section"><span class="tiny">PROJECT DETAILS</span></section>
+    <section class="block detail" id="ni-assist">
+      <div class="detail-head">
+        <div><span class="tiny">01 / NOV 2024 – JAN 2025</span>
+          <h2 style="margin-top:10px">Ni-Assist</h2>
+        </div><a class="pill" href="https://github.com/nidhyyy/Niassist" target="_blank" rel="noopener">View repository
+          ↗</a>
+      </div>
+      <div class="two-col">
+        <div>
+          <p>A Flask-based AI assistant for contextual conversations, document answers, and actionable task plans.</p>
+          <div class="skills"><span>Python</span><span>Flask</span><span>Gemini API</span><span>SQLite</span><span>AWS
+              EC2</span><span>Nginx</span><span>Gunicorn</span><span>JavaScript</span></div>
+        </div>
+        <div>
+          <ul>
+            <li>Transforms conversations and uploaded documents into evidence-based answers and actionable task plans.
+            </li>
+            <li>Combines authentication, contextual chat memory, response streaming, voice interaction, and automated
+              reminders using Gemini API and SQLite.</li>
+            <li>Established HTTPS hosting on AWS EC2 with Nginx and Gunicorn, with application deployment and server
+              maintenance.</li>
+          </ul>
+          <p>The repository is available below. The previous EC2 deployment is currently stopped.</p>
+        </div>
+      </div>
+    </section>
+    <section class="block detail" id="pulsewatch"><span id="monitoring-dashboard" aria-hidden="true"></span>
+      <div class="detail-head">
+        <div><span class="tiny">02 / INFRASTRUCTURE MONITORING</span>
+          <h2 style="margin-top:10px">PulseWatch</h2>
+        </div><a class="pill" href="https://github.com/nidhyyy/pulsewatch" target="_blank" rel="noopener">View
+          repository ↗</a>
+      </div>
+      <div class="two-col">
+        <div>
+          <p>Real-time infrastructure monitoring with CPU, memory, and disk metrics, interactive charts, and alerts.</p>
+          <div class="skills">
+            <span>React</span><span>Node.js</span><span>WebSockets</span><span>Chart.js</span><span>Docker</span>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>Evolves the original monitoring dashboard into PulseWatch, with CPU, memory, and disk utilization
+              tracking through a React and Node.js interface.</li>
+            <li>Uses WebSocket-based updates, interactive charts, and alerts to support diagnosis of performance
+              bottlenecks.</li>
+            <li>Containerized with Docker to streamline deployment and maintain environment consistency.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="block detail" id="eco-track">
+      <div class="detail-head">
+        <div><span class="tiny">03 / FEB 2025 – MAR 2025</span>
+          <h2 style="margin-top:10px">Eco-Track</h2>
+        </div><a class="pill" href="https://github.com/nidhyyy/Food_Waste-_Tracker" target="_blank" rel="noopener">View
+          repository ↗</a>
+      </div>
+      <div class="two-col">
+        <div>
+          <p>Food-waste insights, visual dashboards, and AI-powered food-storage recommendations.</p>
+          <div class="skills"><span>HTML</span><span>Tailwind
+              CSS</span><span>JavaScript</span><span>Chart.js</span><span>Gemini API</span></div>
+        </div>
+        <div>
+          <ul>
+            <li>Presents food-waste insights through visual dashboards to support informed food-management decisions.
+            </li>
+            <li>Integrates Gemini API-powered conversational assistance for personalized food-storage recommendations.
+            </li>
+            <li>Combines a responsive interface, interactive visualizations, animations, and gamified features to
+              encourage engagement.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="block detail" id="thread-store">
+      <div class="detail-head">
+        <div><span class="tiny">04 / E-COMMERCE</span>
+          <h2 style="margin-top:10px">Thread-Store</h2>
+        </div><a class="pill" href="https://github.com/nidhyyy" target="_blank" rel="noopener">GitHub profile ↗</a>
+      </div>
+      <div class="two-col">
+        <div>
+          <p>A clothing e-commerce application with customer accounts, product browsing, and an order workflow backed by
+            MongoDB.</p>
+          <div class="skills">
+            <span>JavaScript</span><span>Node.js</span><span>MongoDB</span><span>Mongoose</span><span>MongoDB
+              Compass</span><span>MongoDB Atlas</span>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>Supports customer signup and login, with customer accounts created through the user-facing
+              authentication flow.</li>
+            <li>Connects the product catalog and ordering workflow to MongoDB through Mongoose.</li>
+            <li>Includes product and order data management, with MongoDB Compass used to inspect and manage stored
+              records.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="block detail" id="machine-failure-detection">
+      <div class="detail-head">
+        <div><span class="tiny">05 / MACHINE LEARNING</span>
+          <h2>Machine Failure Detection and Maintenance Prioritization</h2>
+        </div>
+      </div>
+      <div class="two-col">
+        <div>
+          <p>A PySpark notebook that classifies equipment observations and compares alert thresholds for inspection
+            prioritization.</p>
+          <div class="skills"><span>Python</span><span>PySpark</span><span>Spark ML</span><span>Jupyter</span></div>
+        </div>
+        <div>
+          <ul>
+            <li>Uses the synthetic UCI AI4I 2020 dataset. Removes identifiers and outcome-related fields from the
+              feature set to avoid leakage.</li>
+            <li>Compares Logistic Regression, Decision Tree, and Linear SVM using separate training, validation, and
+              test splits.</li>
+            <li>Evaluates failure-class precision, recall, F1, and confusion matrices. Compares probability thresholds
+              on validation data for Logistic Regression and Decision Tree.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-actions"><a class="pill" href="https://doi.org/10.24432/C5HS5C" target="_blank"
+          rel="noopener">View dataset ↗</a></div>
+
+
+      <div class="project-results">
+        <h3>Model selection</h3>
+        <p>The Decision Tree with an alert threshold of <strong>0.10</strong> ranked highest under the validation
+          selection rule. At default thresholds, Logistic Regression and Linear SVM both had 0% failure recall and an F1
+          of 0. Lowering the tree’s threshold increased its validation failure recall from 30.61% to 71.43% and its F1
+          from 0.4225 to 0.4861, with more false alarms.</p>
+        <div class="two-col">
+          <table>
+            <caption>Held-out test metrics</caption>
+            <thead>
+              <tr>
+                <th scope="col">Metric</th>
+                <th scope="col">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Accuracy</th>
+                <td>94.98%</td>
+              </tr>
+              <tr>
+                <th scope="row">Failure precision</th>
+                <td>29.89%</td>
+              </tr>
+              <tr>
+                <th scope="row">Failure recall</th>
+                <td>68.42%</td>
+              </tr>
+              <tr>
+                <th scope="row">Failure F1-score</th>
+                <td>0.4160</td>
+              </tr>
+              <tr>
+                <th scope="row">Observations</th>
+                <td>1,455</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <caption>Test confusion matrix</caption>
+            <thead>
+              <tr>
+                <th scope="col">Actual class</th>
+                <th scope="col">Predicted normal</th>
+                <th scope="col">Predicted failure</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Normal</th>
+                <td>1,356</td>
+                <td>61</td>
+              </tr>
+              <tr>
+                <th scope="row">Failed</th>
+                <td>12</td>
+                <td>26</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The model detected 26 of 38 failures, missed 12, and generated 61 false alarms. On this synthetic dataset,
+          the results illustrate how the model could prioritize inspections, with many alerts still requiring checks.
+        </p>
+        <p>The notebook records successful model saving and loading, with matching predictions on both demonstration
+          inputs.</p>
+      </div>
+    </section>
+
+    <section class="block detail" id="product-sales-dashboard">
+      <div class="detail-head">
+        <div><span class="tiny">06 / BUSINESS INTELLIGENCE</span>
+          <h2>Product Sales Insights &amp; Demand Forecast Dashboard</h2>
+        </div>
+      </div>
+      <div class="two-col">
+        <div>
+          <p>A Power BI dashboard for exploring retail pricing, seasonal stock, product ratings, returns, and demand
+            trends.</p>
+          <div class="skills"><span>Power BI</span><span>Data modeling</span><span>Retail
+              analytics</span><span>Forecasting</span></div>
+        </div>
+        <div>
+          <ul>
+            <li>Compares original and current prices, markdowns, and stock across seasons and product groups.</li>
+            <li>Uses slicers for category, brand, and size, alongside KPI cards and drill-down views.</li>
+            <li>Combines sales and inventory analysis with demand forecasting to support retail planning.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-actions"><a class="pill"
+          href="https://drive.google.com/file/d/1XwWw8r1yUR7dOslO-ZQj9upOtawons51/view?usp=sharing" target="_blank"
+          rel="noopener">Open dashboard file ↗</a><a class="pill"
+          href="https://www.kaggle.com/datasets/pratyushpuri/retail-fashion-boutique-data-sales-analytics-2025"
+          target="_blank" rel="noopener">View dataset ↗</a></div>
+
+      <figure class="project-figure">
+        <a href="assets/retail-dashboard.png" aria-label="Open full-size Power BI dashboard screenshot">
+          <img src="assets/retail-dashboard.png" width="1302" height="730" loading="lazy"
+            alt="Power BI dashboard with seasonal stock, markdown and price charts, plus brand, category and size filters">
+        </a>
+        <figcaption>Seasonal pricing, stock, and markdown views from the Power BI dashboard.</figcaption>
+      </figure>
+    </section>
+    <section class="block"><span class="tiny">TRAINING PROJECT</span>
+      <h2 style="margin-top:12px">Event Ticket Booking System</h2>
+      <p class="lede" style="font-size:15px">Designed during C++ Programming: DSA & OOP training at CSE Pathshala,
+        June–August 2025. Includes role-based access control and CSV-based data persistence.</p>
+      <div class="skills"><span>C++</span><span>OOP</span><span>CSV persistence</span><span>Role-based access</span>
+      </div>
+    </section>
+    <section class="contact">
+      <div><span class="tiny">LET’S CONNECT</span>
+        <h2>Have an opportunity<br>or an idea in mind?</h2>
+      </div><a class="round" href="contact.html" aria-label="Contact Nidhi">↗</a>
+    </section>
+    <footer class="footer"><span>© 2026 Nidhi Savita</span>
+      <div class="footer-links"><a href="https://github.com/nidhyyy" target="_blank" rel="noopener">GitHub ↗</a><a
+          href="https://www.linkedin.com/in/nidhi-savita17/" target="_blank" rel="noopener">LinkedIn ↗</a><a
+          href="resume.pdf" download="Nidhi_Savita_Resume.pdf">Download CV ↓</a></div><a href="#home">Back to top ↑</a>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>

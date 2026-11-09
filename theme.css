@@ -1,0 +1,22 @@
+/* EDIT THESE COLORS, SAVE, THEN REFRESH YOUR BROWSER. */
+:root {
+  --theme-main: #ffad80;
+  --theme-light: #ffe0c5;
+  --theme-soft: #ffdab9;
+  --theme-accent: #a84d24;
+  --theme-text: #442b20;
+  --theme-page: #faf8f2;
+}
+.shell { background: var(--theme-page); }
+.profile { background: var(--theme-main); }
+.profile h2, .profile h2 small, .profile p { color: var(--theme-text); }
+.stat:nth-child(2), .orb, .contact, .info-panel.magenta, .work-art.ai { background: var(--theme-light); }
+.monogram { background: var(--theme-soft); color: var(--theme-accent); }
+.logo span, nav a[aria-current="page"], .page-intro .tiny, .contact-links small, .award-icon { color: var(--theme-accent); }
+.feature::after { border-color: var(--theme-main); }
+.feature::before { border-color: var(--theme-soft); }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline-color: var(--theme-accent); }
+.ambient-orb.one, .ambient-orb.two { background: radial-gradient(circle, var(--theme-soft), transparent 72%); }
+.ambient-ring { border-color: var(--theme-main); }
+.ambient-ring::before { background: var(--theme-accent); }
+.orb-art { background: repeating-radial-gradient(ellipse at 30% 30%, var(--theme-light) 0 3px, var(--theme-accent) 4px 7px, var(--theme-main) 8px 10px); }

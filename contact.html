@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact | Nidhi Savita</title>
+    <meta name="description"
+        content="Nidhi Savita — Computer Science undergraduate building web applications, backend systems, and AI-powered workflows.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="shell" id="home">
+        <header>
+            <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="projects.html">Projects</a><a
+                    href="about.html">About</a><a href="resume.html">Resume</a><a href="contact.html"
+                    aria-current="page">Contact</a></nav>
+            <div class="status"><span class="dot"></span> CSE UNDERGRADUATE · CLASS OF 2027</div>
+        </header>
+        <section class="page-intro"><span class="tiny">04 / NIDHI SAVITA</span>
+            <h1 class="page-title">Let’s connect.</h1>
+            <p class="lede">For project conversations, collaboration, and opportunities — you can reach me through the
+                channels below.</p>
+        </section>
+        <div class="contact-layout">
+            <section>
+                <h2 style="font-size:29px;letter-spacing:-1px">Start a conversation.</h2>
+                <p class="lede" style="font-size:15px">Tell me a little about your idea or opportunity, and the best way
+                    to reach you.</p>
+                <div class="contact-links"><a
+                        href="mailto:nidhisavita2006@gmail.com"><small>EMAIL</small>nidhisavita2006@gmail.com ↗</a><a
+                        href="tel:+918109579833"><small>PHONE</small>+91-8109579833 ↗</a><a
+                        href="https://www.linkedin.com/in/nidhi-savita17/" target="_blank"
+                        rel="noopener"><small>LINKEDIN</small>nidhi-savita17 ↗</a><a href="https://github.com/nidhyyy"
+                        target="_blank" rel="noopener"><small>GITHUB</small>nidhyyy ↗</a></div><button id="copy-email"
+                    class="pill" style="margin-top:25px">Copy email address</button>
+                <p class="copy-message" id="copy-status" aria-live="polite"></p>
+            </section>
+            <section class="contact-form-panel">
+                <h2>What’s on your mind?</h2>
+                <form id="contact-form"><label for="name">Your name</label><input id="name" name="name"
+                        autocomplete="name" required maxlength="100" placeholder="Your name"><label for="email">Your
+                        email</label><input id="email" name="email" type="email" autocomplete="email" required
+                        placeholder="you@example.com"><label for="message">Your message</label><textarea id="message"
+                        name="message" required minlength="10" maxlength="3000"
+                        placeholder="Share a few details about your project or opportunity..."></textarea><button
+                        class="pill send" type="submit">Prepare email draft ↗</button>
+                    <p class="form-note">This form prepares a draft in your email app. It doesn’t send a message
+                        automatically.</p>
+                    <div id="draft-result" hidden>
+                        <p class="draft-success" role="status">Your draft is ready. Open your email app to review and
+                            send it.</p><label for="draft">Email draft</label><textarea id="draft" readonly></textarea>
+                        <div class="page-actions"><a id="email-link" class="pill">Open email app ↗</a><button
+                                type="button" class="pill" id="copy-draft">Copy draft</button></div>
+                        <p id="draft-copy-status" aria-live="polite" class="copy-message"></p>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <footer class="footer"><span>© 2026 Nidhi Savita</span>
+            <div class="footer-links"><a href="https://github.com/nidhyyy" target="_blank" rel="noopener">GitHub ↗</a><a
+                    href="https://www.linkedin.com/in/nidhi-savita17/" target="_blank" rel="noopener">LinkedIn ↗</a><a
+                    href="resume.pdf" download="Nidhi_Savita_Resume.pdf">Download CV ↓</a></div><a href="#home">Back to
+                top ↑</a>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

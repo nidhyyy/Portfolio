@@ -1,367 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nidhi Savita - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio | Nidhi Savita</title>
+  <meta name="description"
+    content="Nidhi Savita — Computer Science undergraduate building web applications, backend systems, and AI-powered workflows.">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="background-animation">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-        <div class="blob blob-4"></div>
-        <div class="blob blob-5"></div>
-        <div class="blob blob-6"></div>
-    </div>
-    <nav>
-        <div class="logo">PORTFOLIO</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#training-extra">Training & Extras</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section id="home" class="hero fade-in-section">
-            <div class="hero-content text-column">
-                <h1>Hello, I am <br><span class="highlight">Nidhi Savita</span></h1>
-                <p id="hero-subtitle">Enthusiast <span class="highlight">Data Analyst</span> with a strong enthusiasm
-                    for tackling complex problems and crafting impactful, digital solutions.</p>
-                <div class="actions">
-                    <button id="download-resume" class="btn primary-btn"><i class="fas fa-download"></i> Download Resume
-                        PDF</button>
-                    <a href="#projects" class="btn secondary-btn">View My Work</a>
-                </div>
-            </div>
-            <div class="hero-image image-column">
-                <div class="image-placeholder" id="profile-img-container">
-                    <img src="Files/Profile.jpeg" alt="Nidhi Savita" id="profile-img"
-                        style="display: block; width: 100%; height: 100%; object-fit: cover;">
-                    <span id="img-fallback" style="display: none;">Your Image Here</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="fade-in-section glass-panel about-overhaul">
-            <div class="about-header">
-                <h2>About Me</h2>
-                <p class="about-tagline highlight">"Turning Data into Insights, and Ideas into Reality."</p>
-            </div>
-            <div class="about-grid">
-                <div class="about-main-text">
-                    <p>I am a B.Tech Computer Science and Engineering student from Lovely Professional University. I
-                        have expertise developing online applications using HTML, CSS, React, and NodeJS, and like
-                        writing in C++, Java, and Python. I am versatile, consistent, and collaborative, with a strong
-                        emphasis on problem-solving and lifelong learning.</p>
-                </div>
-                <div class="about-badges">
-                    <div class="info-badge glass-panel">
-                        <i class="fas fa-user-graduate"></i>
-                        <span>B.Tech CSE @ LPU</span>
-                    </div>
-                    <div class="info-badge glass-panel">
-                        <i class="fas fa-database"></i>
-                        <span>Data Analyst Enthu.</span>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="fade-in-section">
-            <h2>Education</h2>
-            <div class="cert-list" id="education-container">
-                <div class="cert-card glass-panel">
-                    <h3>B.Tech - Computer Science</h3>
-                    <p>Lovely Professional University<br>Phagwar| Since Aug 2023<br>CGPA: 7.38</p>
-                </div>
-                <div class="cert-card glass-panel">
-                    <h3>Intermediate</h3>
-                    <p>CM Rise Govt. Padma Raje Girls<br>Gwalior | Apr 2022 - Mar 2023<br>CGPA: 8.57</p>
-                </div>
-                <div class="cert-card glass-panel">
-                    <h3>Matriculation</h3>
-                    <p>Oracle Public School<br>Gwalior | Apr 2020 - Mar 2021<br>CGPA: 6.63</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="fade-in-section">
-            <h2>My Skills</h2>
-
-            <div class="skill-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="languages">Languages</button>
-                <button class="filter-btn" data-filter="framework">Framework</button>
-                <button class="filter-btn" data-filter="tools">Tools</button>
-                <button class="filter-btn" data-filter="soft-skills">Soft Skills</button>
-            </div>
-
-            <div class="skills-grid" id="skills-container">
-                <!-- Languages -->
-                <div class="skill-card glass-panel cpp" data-category="languages">
-                    <div class="hexagon-container">
-                        <span class="hexagon-text highlight">C++</span>
-                    </div>
-                    C++
-                </div>
-                <div class="skill-card glass-panel java" data-category="languages">
-                    <div class="hexagon-container">
-                        <i class="fab fa-java"></i>
-                    </div>
-                    Java
-                </div>
-                <div class="skill-card glass-panel c" data-category="languages">
-                    <div class="hexagon-container">
-                        <svg viewBox="0 0 128 128" class="svg-skill-icon">
-                            <path
-                                d="M106.6 93.3c-10.1 14.3-27.1 23.7-46.2 23.7-31.1 0-56.3-25.2-56.3-56.3S29.3 4.4 60.4 4.4c19.1 0 36.1 9.4 46.2 23.7l16.1-12.1C108.3 1.9 85.8-5.3 60.4-5.3 23.9-5.3-5.3 23.9-5.3 60.4S23.9 126.1 60.4 126.1c25.4 0 47.9-7.2 62.3-21.3L106.6 93.3z">
-                            </path>
-                        </svg>
-                    </div>
-                    C
-                </div>
-                <div class="skill-card glass-panel python" data-category="languages">
-                    <div class="hexagon-container">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    Python
-                </div>
-
-                <!-- Framework -->
-                <div class="skill-card glass-panel html" data-category="framework">
-                    <div class="hexagon-container">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    HTML / CSS
-                </div>
-                <div class="skill-card glass-panel react" data-category="framework">
-                    <div class="hexagon-container">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    React / NodeJS
-                </div>
-
-                <!-- Tools -->
-                <div class="skill-card glass-panel" data-category="tools">
-                    <div class="hexagon-container">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    Git / GitHub
-                </div>
-                <div class="skill-card glass-panel sql" data-category="tools">
-                    <div class="hexagon-container">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    Oracle / SQL
-                </div>
-                <div class="skill-card glass-panel excel" data-category="tools">
-                    <div class="hexagon-container">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    Power BI / Excel
-                </div>
-                <div class="skill-card glass-panel" data-category="tools">
-                    <div class="hexagon-container">
-                        <img src="Files/jupyter.png" alt="Jupyter">
-                    </div>
-                    Jupyter
-                </div>
-                <div class="skill-card glass-panel" data-category="tools">
-                    <div class="hexagon-container">
-                        <i class="fab fa-linux"></i>
-                    </div>
-                    Linux / Ubuntu
-                </div>
-                <div class="skill-card glass-panel" data-category="tools">
-                    <div class="hexagon-container">
-                        <img src="Files/mongodb.png" alt="MongoDB">
-                    </div>
-                    MongoDB
-                </div>
-
-                <!-- Soft Skills -->
-                <div class="skill-card glass-panel" data-category="soft-skills">
-                    <div class="hexagon-container">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    Problem Solving
-                </div>
-                <div class="skill-card glass-panel" data-category="soft-skills">
-                    <div class="hexagon-container">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    Collaborative
-                </div>
-                <div class="skill-card glass-panel" data-category="soft-skills">
-                    <div class="hexagon-container">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    Adaptability
-                </div>
-                <div class="skill-card glass-panel" data-category="soft-skills">
-                    <div class="hexagon-container">
-                        <i class="fas fa-check-double"></i>
-                    </div>
-                    Consistent
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="fade-in-section">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid" id="projects-container">
-                <div class="project-card glass-panel">
-                    <div class="project-img"><i class="fas fa-chart-pie fa-3x"></i></div>
-                    <h3>Product Sales & Demands Dashboard</h3>
-                    <p><strong>Oct 2025 - Dec 2025</strong><br>Built stunning Power BI dashboard showcasing sharp data
-                        analysis and eye-catching visualizations. Mastered key tools like DAX, slicers, and interactive
-                        filters to turn raw data into smart insights.</p>
-                    <p style="font-size:0.9rem; opacity:0.8;"><em>Power BI, DAX, Power Query, Data Modelling</em></p>
-                    <div class="project-actions">
-                        <a href="https://github.com/nidhyyy/Product-Sales-Demands-Dashboard" target="_blank"
-                            class="btn small-btn github-btn"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-                <div class="project-card glass-panel">
-                    <div class="project-img"><i class="fas fa-leaf fa-3x"></i></div>
-                    <h3>Eco-Track</h3>
-                    <p><strong>Feb 2025 - Mar 2025</strong><br>A web-based platform to track food waste. Features AI
-                        chatbot for tips and recipes. Delivered a responsive dashboard with visual insights, animations,
-                        and gamification.</p>
-                    <p style="font-size:0.9rem; opacity:0.8;"><em>HTML, Tailwind, JS, Chart.js, Gemini API</em></p>
-                    <div class="project-actions">
-                        <a href="https://github.com/nidhyyy/Food_Waste-_Tracker" target="_blank"
-                            class="btn small-btn github-btn"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-                <div class="project-card glass-panel">
-                    <div class="project-img"><i class="fas fa-chart-line fa-3x"></i></div>
-                    <h3>Crime Rate Analysis</h3>
-                    <p><strong>Jan 2025 - Feb 2025</strong><br>Analyzed California crime data to identify trends and
-                        correlations. Preprocessed datasets and created clear visualizations for insights.</p>
-                    <p style="font-size:0.9rem; opacity:0.8;"><em>Python, Pandas, NumPy, Matplotlib, Jupyter</em></p>
-                    <div class="project-actions">
-                        <a href="https://github.com/nidhyyy/Crime_Rate_Analysis" target="_blank"
-                            class="btn small-btn github-btn"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-                <div class="project-card glass-panel">
-                    <div class="project-img"><i class="fas fa-microphone-alt fa-3x"></i></div>
-                    <h3>Ni-Assist</h3>
-                    <p><strong>Nov 2024 - Jan 2025</strong><br>Voice-controlled assistant for web navigation, media
-                        playback, and utility tasks via natural-language commands with cross-platform text-to-speech.
-                    </p>
-                    <p style="font-size:0.9rem; opacity:0.8;"><em>Python, Speech Recognition, OS module, RegEx</em></p>
-                    <div class="project-actions">
-                        <a href="https://github.com/nidhyyy/Niassist" target="_blank"
-                            class="btn small-btn github-btn"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="certifications" class="fade-in-section">
-            <h2>Certifications</h2>
-            <div class="cert-list">
-                <div class="cert-card glass-panel">
-                    <h3>Ai Fluency: Fundamentals & Frameworks </h3>
-                    <p>Anthropic Academy | Mar 2026</p>
-                    <a href="Files/certificate-Ai Fluency Claude.pdf" target="_blank"
-                        class="btn small-btn github-btn mt-top"><i class="fas fa-certificate"></i> View Certificate</a>
-                </div>
-                <div class="cert-card glass-panel">
-                    <h3>Build generative apps and solutions with No-Code Tools </h3>
-                    <p>Infosys | Aug 2025</p>
-                    <a href="Files/BUILD GEN AI CERTIFICATE.pdf" target="_blank"
-                        class="btn small-btn github-btn mt-top"><i class="fas fa-certificate"></i> View Certificate</a>
-                </div>
-                <div class="cert-card glass-panel">
-                    <h3>DSA & OOPS in C++</h3>
-                    <p>CSE Pathshala | Aug 2025</p>
-                    <a href="Files/DSA C++ Pathshala.png" target="_blank" class="btn small-btn github-btn mt-top"><i
-                            class="fas fa-certificate"></i> View Certificate</a>
-                </div>
-                <div class="cert-card glass-panel">
-                    <h3>Cloud Computing</h3>
-                    <p>NPTEL | Apr 2025</p>
-                    <a href="Files/Cloud Computing.pdf" target="_blank" class="btn small-btn github-btn mt-top"><i
-                            class="fas fa-certificate"></i> View Certificate</a>
-                </div>
-                <div class="cert-card glass-panel">
-                    <h3>Mastering in C</h3>
-                    <p>CSE PathShala | Feb 2024</p>
-                    <a href="Files/Mastering in C.png" target="_blank" class="btn small-btn github-btn mt-top"><i
-                            class="fas fa-certificate"></i> View Certificate</a>
-                </div>
-                <div class="cert-card glass-panel">
-                    <h3>Computer/Network Communication</h3>
-                    <p> Coursera | Sep - Nov 2024</p>
-                    <a href="Files/TCP_IP_Certificate.pdf" target="_blank" class="btn small-btn github-btn mt-top"><i
-                            class="fas fa-certificate"></i> View Certificate</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="training-extra" class="fade-in-section">
-            <h2>Training & Extra-curricular</h2>
-            <div class="cert-list">
-
-                <div class="cert-card glass-panel">
-                    <h3>C++ Programming: DSA & OOPS</h3>
-                    <p>CSE PATHSHALA | Jun 2025 - Aug 2025<br>Hands-on training covering Data Structures, Algorithms,
-                        and OOP concepts.</p>
-                </div>
-
-                <div class="cert-card glass-panel">
-                    <h3>Coke-Studio | Magnitude 2023</h3>
-                    <p>Nov 2023</p>
-                </div>
-
-                <div class="cert-card glass-panel">
-                    <h3>Volunteer</h3>
-                    <p>Department of Youth Capital | LPU | Aug 2023</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="fade-in-section glass-panel">
-            <h2>Get In Touch</h2>
-            <p>I'd love to hear from you! Connect with me on my socials.</p>
-            <div class="socials" id="social-container">
-                <a href="http://www.linkedin.com/in/nidhi-savita17" target="_blank" class="social-icon"
-                    title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/nidhyyy" target="_blank" class="social-icon" title="GitHub"><i
-                        class="fab fa-github"></i></a>
-                <a href="mailto:nidhisavita2006@gmail.com" class="social-icon" title="Email"><i
-                        class="fas fa-envelope"></i></a>
-                <a href="tel:+918109579833" class="social-icon" title="Phone"><i class="fas fa-phone"></i></a>
-            </div>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> nidhisavita2006@gmail.com</p>
-                <p style="margin-top: 15px;"><i class="fas fa-phone"></i> +91 8109579833</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Nidhi Savita. Crafted .</p>
+  <main class="shell" id="home">
+    <header>
+      <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a
+          href="projects.html">Projects</a><a href="about.html">About</a><a href="resume.html">Resume</a><a
+          href="contact.html">Contact</a></nav>
+      <div class="status"><span class="dot"></span> CSE UNDERGRADUATE · CLASS OF 2027</div>
+    </header>
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <p class="eyebrow">B.Tech CSE · Lovely Professional University · 2027</p>
+        <h1 id="intro-title">Nidhi Savita</h1>
+        <p class="intro-role">Full-stack developer</p>
+        <p class="lede">I build web applications, backend systems, and tools that use AI. My projects cover server
+          monitoring, e-commerce, document assistance, and food-waste analytics.</p>
+        <div class="page-actions">
+          <a class="pill" href="projects.html">View projects <span class="direction" aria-hidden="true">↗</span></a>
+          <a class="pill" href="resume.pdf" download="Nidhi_Savita_Resume.pdf">Download Resume ↓</a>
+          <a class="pill" href="contact.html">Contact me</a>
+        </div>
+      </div>
+      <figure class="intro-portrait">
+        <img src="assets/nidhi-savita.jpeg" width="900" height="1600" alt="Nidhi Savita wearing a black blazer outdoors"
+          fetchpriority="high">
+      </figure>
+    </section>
+    <section class="section">
+      <div class="section-head">
+        <div><span class="tiny">01 / WORK</span>
+          <h2>Selected projects</h2>
+        </div><a class="pill" href="projects.html">All project details ↗</a>
+      </div>
+      <div class="project-grid">
+        <article class="work-card" data-category="ai">
+          <div class="work-meta ai"><span class="eyebrow">AI APPLICATION</span><span>Nov 2024 – Jan 2025</span></div>
+          <div class="work-body">
+            <h3>Ni-Assist</h3>
+            <p>A Flask-based AI assistant for contextual conversations, document answers, and actionable task plans.</p>
+            <div class="skills"><span>Python</span><span>Flask</span><span>Gemini API</span><span>SQLite</span></div><a
+              class="project-link" href="projects.html#ni-assist">View project <span class="direction"
+                aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="work-card" data-category="infra">
+          <div class="work-meta infra"><span class="eyebrow">REAL-TIME APPLICATION</span><span>Mar 2026 – Apr
+              2026</span></div>
+          <div class="work-body">
+            <h3>PulseWatch</h3>
+            <p>Real-time infrastructure monitoring with CPU, memory, and disk metrics, interactive charts, and alerts.
+            </p>
+            <div class="skills"><span>React</span><span>Node.js</span><span>WebSockets</span><span>Chart.js</span></div>
+            <a class="project-link" href="projects.html#pulsewatch">View project <span class="direction"
+                aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="work-card" data-category="eco">
+          <div class="work-meta eco"><span class="eyebrow">ANALYTICS APPLICATION</span><span>Feb 2025 – Mar 2025</span>
+          </div>
+          <div class="work-body">
+            <h3>Eco-Track</h3>
+            <p>Food-waste insights, visual dashboards, and AI-powered food-storage recommendations.</p>
+            <div class="skills"><span>HTML</span><span>Tailwind CSS</span><span>JavaScript</span><span>Chart.js</span>
+            </div><a class="project-link" href="projects.html#eco-track">View project <span class="direction"
+                aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="work-card" data-category="commerce">
+          <div class="work-meta commerce"><span class="eyebrow">E-COMMERCE APPLICATION</span><span>Clothing store</span>
+          </div>
+          <div class="work-body">
+            <h3>Thread-Store</h3>
+            <p>A clothing e-commerce application with customer accounts, product browsing, and an order workflow backed
+              by MongoDB.</p>
+            <div class="skills"><span>JavaScript</span><span>Node.js</span><span>MongoDB</span><span>Mongoose</span>
+            </div><a class="project-link" href="projects.html#thread-store">View project <span class="direction"
+                aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="work-card" data-category="ml">
+          <div class="work-meta ml"><span class="eyebrow">Machine learning</span><span>Academic project</span></div>
+          <div class="work-body">
+            <h3>Machine Failure Detection and Maintenance Prioritization</h3>
+            <p>A PySpark notebook that classifies equipment observations and compares alert thresholds for inspection
+              prioritization.</p>
+            <div class="skills"><span>Python</span><span>PySpark</span><span>Spark ML</span><span>Jupyter</span></div>
+            <a class="project-link" href="projects.html#machine-failure-detection"
+              aria-label="View Machine Failure Detection and Maintenance Prioritization">View project <span
+                class="direction" aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="work-card" data-category="eco">
+          <div class="work-meta eco"><span class="eyebrow">Business intelligence</span><span>Academic project</span>
+          </div>
+          <div class="work-body">
+            <h3>Product Sales Insights &amp; Demand Forecast Dashboard</h3>
+            <p>A Power BI dashboard for exploring retail pricing, seasonal stock, product ratings, returns, and demand
+              trends.</p>
+            <div class="skills"><span>Power BI</span><span>Data modeling</span><span>Retail
+                analytics</span><span>Forecasting</span></div>
+            <a class="project-link" href="projects.html#product-sales-dashboard"
+              aria-label="View Product Sales Insights &amp; Demand Forecast Dashboard">View project <span
+                class="direction" aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="about-grid">
+        <div><span class="tiny">02 / ABOUT</span>
+          <h2>About me</h2>
+        </div>
+        <div>
+          <p class="about-copy">I’m a Computer Science undergraduate at Lovely Professional University, graduating in
+            2027.</p>
+          <p style="font-size:14px;line-height:1.9;color:#655b60">My projects bring together REST APIs, databases,
+            real-time features, and cloud deployment. I work with Java, Python, C++, and JavaScript, with a foundation
+            in OOP and data structures and algorithms.</p>
+          <div class="skills">
+            <span>Java</span><span>Python</span><span>C++</span><span>JavaScript</span><span>Flask</span><span>React</span>
+          </div><a class="pill" href="about.html" style="margin-top:25px">My skills & background ↗</a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-head">
+        <div><span class="tiny">03 / RÉSUMÉ</span>
+          <h2>Achievements & certificates</h2>
+        </div>
+      </div>
+      <div class="two-col"><a href="resume.html#achievements" class="info-panel magenta">
+          <div class="big-num">200+</div>
+          <h3>DSA problems solved</h3>
+          <p>LeetCode · December 2025<br>Alongside a 5-Star Gold Java rating on HackerRank.</p><span
+            class="tiny">EXPLORE ACHIEVEMENTS ↗</span>
+        </a><a href="resume.html#certificates" class="info-panel">
+          <div class="big-num">06</div>
+          <h3>Certificates & foundations</h3>
+          <p>Learning across AI, generative AI, cloud computing, and computer networks.</p><span class="tiny">VIEW
+            CERTIFICATES & TRAINING ↗</span>
+        </a></div>
+    </section>
+    <section class="contact">
+      <div><span class="tiny">LET’S CONNECT</span>
+        <h2>Have an opportunity<br>or an idea in mind?</h2>
+      </div><a class="round" href="contact.html" aria-label="Contact Nidhi">↗</a>
+    </section>
+    <footer class="footer"><span>© 2026 Nidhi Savita</span>
+      <div class="footer-links"><a href="https://github.com/nidhyyy" target="_blank" rel="noopener">GitHub ↗</a><a
+          href="https://www.linkedin.com/in/nidhi-savita17/" target="_blank" rel="noopener">LinkedIn ↗</a><a
+          href="resume.pdf" download="Nidhi_Savita_Resume.pdf">Download CV ↓</a></div><a href="#home">Back to top ↑</a>
     </footer>
-
-    <script src="script.js"></script>
+  </main>
+  <script src="app.js"></script>
 </body>
 
 </html>

@@ -1,68 +1,30 @@
-# Nidhi Savita - Personal Portfolio
+# Nidhi Portfolio — Editable source
 
-Welcome to my personal portfolio! This is a modern, high-performance website designed with a "Deep Space" aesthetic, showcasing my journey as a **Data Analyst** and **Software Engineering student**.
+## Open in VS Code
+1. Extract this ZIP using Windows "Extract All".
+2. Open the extracted Nidhi_Portfolio folder in VS Code: File > Open Folder.
+3. Open index.html in a browser, or use the VS Code Live Server extension and choose "Open with Live Server".
 
-##  Live Demo
-Check out the live site here: **[https://nidhyyy.github.io/Portfolio/](https://nidhyyy.github.io/Portfolio/)**
+No npm installation or backend is required.
 
----
+## Change colors
+Open theme.css. Change the six HEX color values at the top, save with Ctrl+S, and refresh your browser. These settings override the original style.css on all five pages.
+VS Code displays a color picker when you click the color swatch beside a HEX value.
 
-## Features
+## Edit content
+- index.html: Home page
+- projects.html: Project cards, descriptions, technologies, repository links
+- about.html: About, skills, education, training
+- resume.html: Certificates, achievements, education, training
+- contact.html: Contact information and message form
+- style.css: Layout, responsive styles, background animations
+- theme.css: Easy color customization
+- app.js: Project filtering, clipboard actions, email draft form
+- resume.pdf: Downloadable resume; replace this with your updated PDF using the same name
 
-- **Deep Space Aesthetic**: A stunning midnight-blue theme with animated nebula blobs and a premium glassmorphism UI.
-- **Interactive Skill Cards**: Custom-designed hexagonal cards with vibrant neon glows and subtle "pop-out" hover effects.
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
-- **Smart Navigation**: A sleek, auto-hiding navigation bar that respects your scroll direction.
-- **Dynamic Content**: Sections for Featured Projects, Education, and official Certifications with direct PDF links.
-- **Performance Optimized**: Built with vanilla HTML5, CSS3, and JavaScript for lightning-fast load times.
+The form prepares an email draft; it does not send messages from a server.
+Clipboard actions work best on localhost (Live Server) or HTTPS.
+Fonts are loaded from Google Fonts; fallback fonts work offline.
 
----
-
-## 🛠️ Tech Stack
-
-- **HTML5**: Semantic structure for better SEO and accessibility.
-- **CSS3 (Vanilla)**: Custom styling including Flexbox, Grid, Glassmorphism, and Keyframe animations.
-- **JavaScript**: Smooth scroll behaviors, intersection observers for fade-in effects, and dynamic navigation logic.
-- **Font Awesome & Google Fonts**: Premium iconography and modern typography (Outfit).
-
----
-
-## 📂 Project Structure
-
-```bash
-Portfolio/
-├── Files/              # Resume and Certification PDFs/Images
-├── index.html          # Main entry point
-├── style.css           # Core design system and animations
-├── script.js           # Interactive logic and navigation
-├── .gitignore          # Excludes node_modules and system files
-└── README.md           # Project documentation
-```
-
----
-
-##  Local Setup
-
-To run this project locally:
-
-1.  **Clone the Repository**:
-    ```bash
-    git clone https://github.com/nidhyyy/Portfolio.git
-    ```
-2.  **Navigate to Directory**:
-    ```bash
-    cd Portfolio
-    ```
-3.  **Launch**:
-    Open `index.html` in your browser or use the **VS Code Live Server** extension for the best experience.
-
----
-
-##  Contact
-
-- **LinkedIn**: [linkedin.com/in/nidhi-savita17](http://www.linkedin.com/in/nidhi-savita17)
-- **Email**: nidhisavita2006@gmail.com
-- **Phone**: +91 8109579833
-
----
-*Developed with 💙 by Nidhi Savita*
+Local changes affect your extracted copy. The previously published website does not update automatically.
+To use another host, upload these files with index.html at the hosting root.
